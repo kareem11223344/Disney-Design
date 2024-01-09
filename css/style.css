@@ -1,0 +1,138 @@
+:root{
+    --main-color:#ff9800 ;
+    --nav-color: #060c26;
+    --animation5: 0.5s;
+}
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: cairo;
+    /* direction: rtl; */
+}
+@font-face{
+    font-family: cairo;
+    src: url("../fonts/Alexandria-VariableFont_wght.ttf");
+}
+a{
+    text-decoration: none;
+}
+.container{
+
+}
+.overlay{
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* Start Navbar */
+.navbar{
+    background-color: var(--nav-color);
+}
+.navbar .navbar-brand{
+    width: 8%;
+    height: 60px;
+}
+.navbar .navbar-brand img{
+    width: 50%;
+    text-align: center;
+}
+.collapse .nav-item a, .active{
+    color: #fff;
+    font-size: 1.1em;
+}
+@media screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-link {
+      padding: 0 0.5em;
+    }
+}
+.navBtn{
+    background: linear-gradient(105deg, rgb(5, 17, 141) 0%, rgb(1, 17, 78) 100%);
+    color: #fff;
+    padding: 7px;
+    border-radius: 23px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    border: none;
+    font-size: 15px;
+    width: 140px;
+
+}  
+.navBtn a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 7px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    height: 30px;
+}
+.dropdown-toggle:focus{
+    color: #fff;
+}
+/* End Navbar */
+
+/* Start Landing-page */
+.landing-page{
+    position: relative;
+    background-image: url(../images/poster\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    object-fit: cover;
+}
+.introduction-text{
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    color: #fafafa;
+    font-size: 30px;
+}
+.introduction-text span{
+    color: var(--main-color);
+}
+@media(max-width:991px){
+    .introduction-text{
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+/* End Landing-page */
+
+/* Start Video-Card */
+.video-card-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.video-card{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+} 
+.card-img,
+.card-video{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+}
+.card-video{
+   position: relative;
+}
+
+
+/* End Video-Card */
